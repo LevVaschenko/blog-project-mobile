@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1d2126;
+    height: 80px;
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    padding-top: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-xs-12 { /* Extra Small */
+    flex: 0 0 100%; /* колонка не будет сжиматься и разжиматься (значения 0 и 0), а будет заполнять 100% ширины */
+    max-width: 100%;
+}
+
+@mixin col-md-settings() {
+    .col-md-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .col-md-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-md-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-md-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col-md-5 {
+        flex: 0 0 41.66666%;
+        max-width: 41.66666%;
+    }
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-md-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .col-md-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-md-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-md-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .col-md-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+    .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* sm (планшет) */
+
+@media (min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* md (ноутбук) */
+
+@media (min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+    @include col-md-settings();
+}
+
+/* lg (desktop) */
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    @include col-md-settings();
+}
+
+@media (max-width:767px) {
+    .hidden-xs {
+        display: none;
+    }
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    background-color: #1d2126;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.menu {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+@media (min-width:992px) {
+    .menu {
+        overflow-x: hidden;
+    }
+    .menu a:hover {
+        border: 2px solid;
+        border-radius: 2px;
+        color: #23b7a4;
+        transition: 0.2s all ease-in-out;
+    }
+}
+
+@media (max-width:992px) {
+    .menu a:focus {
+        background-color: #23b7a4;
+        color: white;
+        border-radius: 2px;
+        transition: 0.2s all ease-in-out;
+    }
+}
+
+.menu li{
+    float: left;
+    width: 65px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.menu a {
+    display: flex;
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #a4aead;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    font-family: 'OpenSans';
+    font-weight: 600;
+}
+
+.menu li:hover {
+    // margin-top: 10px;
+    // padding-top: 10px;
+    transition: 0.2s all ease-in-out;
+}
+
+.form-search-header {
+    border: 2px solid #3a3f45;
+    border-radius: 5px;
+    width: 200px;
+    height: 36px;
+    font-size: 14px;
+    padding-left: 8px;
+    margin-left: 100px;
+    margin-top: 8px;
+    color: #2c71b8;
+}
+
+.form-search-header input {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-family: 'OpenSans';
+    font-weight: 600;
+    width: 160px;
+    height: 33px;
+    -webkit-appearance: none;
+    font-family: 'Roboto', sans-serif;
+    color: #a4aead;
+    border-radius: 2px;
+    vertical-align: middle;
+    float: left;
+}
+
+::-webkit-input-placeholder { 
+    color:#a4aead; 
+}
+
+.form-search-header input:focus {
+    outline: none;
+}
+
+@mixin Search-header-settings() {
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0;
+    margin-top: -32px;
+    margin-right: 0.5px;
+    border-radius: 2px;
+}
+
+.form-search-header button {
+    @include Search-header-settings();
+    background: url(./images/magnifier.png) no-repeat center;
+    float: right;
+}
+
+.form-search-header button:hover {
+    @include Search-header-settings();
+    background-color: white;
+    transition: 0.25s all ease-in-out;
+}
