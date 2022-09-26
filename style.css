@@ -1,11 +1,11 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Quattrocento+Sans:wght@700&display=swap");
 * {
   box-sizing: border-box;
 }
 
 header {
   background-color: #1d2126;
-  height: 80px;
 }
 
 body {
@@ -150,16 +150,19 @@ body {
     max-width: 100%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .hidden-xs {
     display: none;
+  }
+  .header {
+    height: 80px;
   }
 }
 .logo {
   display: flex;
   justify-content: center;
   background-color: #1d2126;
-  padding-top: 15px;
+  padding-top: 10px;
   padding-bottom: 15px;
 }
 
@@ -169,17 +172,18 @@ body {
   overflow-y: hidden;
   justify-content: space-between;
   padding-bottom: 15px;
+  font-family: "Open Sans";
 }
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
   .menu {
     overflow-x: hidden;
   }
   .menu a:hover {
     border: 2px solid;
-    border-radius: 2px;
+    border-radius: 3px;
     color: #23b7a4;
-    transition: 0.2s all ease-in-out;
+    transition: 0.18s all ease-in-out;
   }
 }
 @media (max-width: 992px) {
@@ -187,9 +191,14 @@ body {
     background-color: #23b7a4;
     color: white;
     border-radius: 2px;
-    transition: 0.2s all ease-in-out;
+    transition: 0.18s all ease-in-out;
   }
 }
+.menu ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .menu li {
   float: left;
   width: 65px;
@@ -201,7 +210,7 @@ body {
   display: flex;
   width: 80px;
   height: 30px;
-  margin-top: 10px;
+  margin-top: 5px;
   text-decoration: none;
   color: #a4aead;
   font-size: 14px;
@@ -209,12 +218,12 @@ body {
   align-items: center;
   justify-content: center;
   line-height: 50px;
-  font-family: "OpenSans";
+  font-family: "Open Sans";
   font-weight: 600;
 }
 
 .menu li:hover {
-  transition: 0.2s all ease-in-out;
+  transition: 0.18s all ease-in-out;
 }
 
 .form-search-header {
@@ -225,7 +234,6 @@ body {
   font-size: 14px;
   padding-left: 8px;
   margin-left: 100px;
-  margin-top: 8px;
   color: #2c71b8;
 }
 
@@ -233,7 +241,7 @@ body {
   background-color: transparent;
   border: none;
   font-size: 14px;
-  font-family: "OpenSans";
+  font-family: "Open Sans";
   font-weight: 600;
   width: 160px;
   height: 33px;
@@ -278,5 +286,150 @@ body {
   margin-right: 0.5px;
   border-radius: 2px;
   background-color: white;
-  transition: 0.25s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.slider-text {
+  color: white;
+  background-image: url(images/slider.png);
+  background-repeat: no-repeat;
+  font-size: 36px;
+  font-family: "Quattrocento Sans";
+  width: 100%;
+  height: 660px;
+  padding-top: 162px;
+  padding-left: 440px;
+}
+
+lorem {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Open Sans";
+  font-size: 16px;
+  top: 10px;
+}
+
+.lorem {
+  width: 650px;
+  height: 45px;
+  padding-top: 16px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 28px;
+  width: 124px;
+  height: 44px;
+  font-size: 14px;
+  border: 2px solid white;
+  border-radius: 6px;
+  text-align: center;
+  padding: 15px;
+  transition: 0.15s all ease-in-out;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background-color: #23b7a4;
+  color: white;
+  border: 2px solid #23b7a4;
+}
+
+main {
+  border-bottom: 1px solid #dde1e4;
+}
+
+.about {
+  height: 610px;
+}
+
+.title {
+  color: black;
+  font-family: "Quattrocento Sans";
+  font-size: 36px;
+  padding-top: 70px;
+  padding-left: 18px;
+  padding-right: 40px;
+}
+
+p1:before {
+  position: absolute;
+  background-color: #e1e6ea;
+  width: 10px;
+  height: 35px;
+  content: "";
+  left: 380px;
+}
+
+.our-mission {
+  width: 640px;
+  color: #8d8f92;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.first {
+  padding-bottom: 40px;
+}
+
+.facebook, .twitter, .g, .basketball, .be {
+  width: 60px;
+  height: 60px;
+  border: none;
+  padding-left: 6px;
+}
+
+.facebook:hover, .twitter:hover, .g:hover, .basketball:hover, .be:hover {
+  background-color: #d4dbdf;
+  cursor: pointer;
+}
+
+.facebook {
+  background: url(./images/facebook.png) no-repeat center;
+  background-color: #d0d5d9;
+}
+
+.twitter {
+  background: url(images/twitter.png) no-repeat center;
+  background-color: #d0d5d9;
+}
+
+.g {
+  background: url(images/g.png) no-repeat center;
+  background-color: #d0d5d9;
+}
+
+.basketball {
+  background: url(images/basketball.png) no-repeat center;
+  background-color: #d0d5d9;
+}
+
+.be {
+  background: url(images/be.png) no-repeat center;
+  background-color: #d0d5d9;
+}
+
+.our-goals {
+  padding-top: 150px;
+  padding-left: 35px;
+  width: 450px;
+}
+
+.n01, .n02, .n03 {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin-right: 0px;
+  top: 50%;
+  left: 50%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #23b7a4;
+  margin-bottom: 60px;
 }/*# sourceMappingURL=style.css.map */
