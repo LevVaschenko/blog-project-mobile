@@ -318,17 +318,16 @@ main {
     font-family: 'Quattrocento Sans';
     font-size: 36px;
     padding-top: 70px;
-    padding-left: 18px;
     padding-right: 40px;
 }
     
 p1:before {
     position: absolute;
-    background-color: #e1e6ea;
+    top: 807px;
     width: 10px;
     height: 35px;
+    background-color: #e1e6ea;
     content: "";
-    left: 380px;
 }
 
 .our-mission {
@@ -385,11 +384,16 @@ p1:before {
 .our-goals {
     padding-top: 150px;
     padding-left: 35px;
-    width: 450px;
+    width: 100px;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
 }
 
 .n01, .n02, .n03  {
-    display: flex;
+    display: inline-flex;
     width: 50px;
     height: 50px;
     margin-right: 0px;
@@ -402,4 +406,39 @@ p1:before {
     margin-bottom: 60px;
 }
 
-// 450 * 300
+h1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.our-goals-text {
+    padding-top: 150px;
+    padding-left: 20px;
+    width: 400px;
+    height: 450px;
+}
+
+.our-goals-title {
+    font-family: 'Quattrocento Sans';
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 9px;
+}
+
+.our-goals-description {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #8d8f92;
+    padding-bottom: 17px;
+    line-height: 22px;
+}
+
+.our-goals-description2 {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #8d8f92;
+    padding-bottom: 39px;
+    line-height: 22px;
+}
