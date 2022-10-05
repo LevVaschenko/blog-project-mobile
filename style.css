@@ -539,10 +539,17 @@ main {
   text-transform: none;
 }
 
-.team-members-image, .lovely-work-image1, .lovely-work-image2, .lovely-work-image, .lovely-work-img {
+.team-members-image {
   opacity: 1;
   display: block;
   transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.lovely-work-image1, .lovely-work-image2, .lovely-work-image, .lovely-work-img {
+  opacity: 1;
+  display: block;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -622,7 +629,7 @@ main {
 }
 
 menu {
-  height: 900px;
+  height: 980px;
   background-color: #3a454d;
 }
 
@@ -655,7 +662,6 @@ menu {
 
 .lovely-work-images2 {
   display: flex;
-  padding-top: 0;
   width: 1140px;
 }
 
@@ -663,6 +669,7 @@ menu {
   padding-right: 25px;
   width: 360px;
   height: 265px;
+  margin-bottom: 60px;
 }
 
 .lovely-work-image2 {
@@ -683,7 +690,7 @@ menu {
   -ms-transform: translate(-50%, -50%);
   top: 50%;
   left: 30.5%;
-  top: 2330px;
+  top: 2340px;
 }
 
 .hover2 {
@@ -694,7 +701,7 @@ menu {
   -ms-transform: translate(-50%, -50%);
   top: 50%;
   left: 50.5%;
-  top: 2330px;
+  top: 2340px;
 }
 
 .hover3 {
@@ -705,7 +712,7 @@ menu {
   -ms-transform: translate(-50%, -50%);
   top: 50%;
   left: 71%;
-  top: 2330px;
+  top: 2340px;
 }
 
 .hover4 {
@@ -716,7 +723,7 @@ menu {
   -ms-transform: translate(-50%, -50%);
   top: 50%;
   left: 30.5%;
-  top: 2600px;
+  top: 2665px;
 }
 
 .hover5 {
@@ -727,7 +734,7 @@ menu {
   -ms-transform: translate(-50%, -50%);
   top: 50%;
   left: 50.5%;
-  top: 2600px;
+  top: 2665px;
 }
 
 .hover6 {
@@ -738,7 +745,7 @@ menu {
   -ms-transform: translate(-50%, -50%);
   top: 50%;
   left: 71%;
-  top: 2600px;
+  top: 2665px;
 }
 
 .col-md-4:hover .lovely-work-img {
@@ -790,8 +797,10 @@ menu {
 .col-md-4:hover .desc {
   background: #1d2126;
   color: white;
-  transition: 0.5s ease;
   display: inline-block;
+}
+.col-md-4:hover .lovely-work-image1, .col-md-4:hover .lovely-wokr-image2, .col-md-4:hover .lovely-work-image, .col-md-4:hover .lovely-work-img {
+  margin-bottom: 0px;
 }
 
 .desc {
@@ -809,7 +818,7 @@ menu {
 
 .lovely-work-button {
   display: inline-block;
-  margin-top: 60px;
+  margin-top: 20px;
   margin-bottom: 60px;
   width: 150px;
   left: 50%;

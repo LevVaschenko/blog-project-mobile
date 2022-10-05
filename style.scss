@@ -555,10 +555,16 @@ main {
     text-transform: none;
 }
 
-.team-members-image, .lovely-work-image1, .lovely-work-image2, .lovely-work-image, .lovely-work-img {
+.team-members-image{
     opacity: 1;
     display: block;
     transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.lovely-work-image1, .lovely-work-image2, .lovely-work-image, .lovely-work-img {
+    opacity: 1;
+    display: block;
     backface-visibility: hidden;
 }
 
@@ -626,7 +632,7 @@ main {
 }
 
 menu {
-    height: 900px;
+    height: 980px;
     background-color: #3a454d;
 }
 
@@ -654,7 +660,6 @@ menu {
 
 .lovely-work-images2 {
     display: flex;
-    padding-top: 0;
     width: 1140px;
 }
 
@@ -662,7 +667,7 @@ menu {
     padding-right: 25px;
     width: 360px;
     height: 265px;
-    // margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .lovely-work-image2 {
@@ -678,37 +683,37 @@ menu {
 .hover1 {
     @include middle-settings();
     left: 30.5%;
-    top: 2330px;
+    top: 2340px;
 }
 
 .hover2 {
     @include middle-settings();
     left: 50.5%;
-    top: 2330px;
+    top: 2340px;
 }
 
 .hover3 {
     @include middle-settings();
     left: 71%;
-    top: 2330px;
+    top: 2340px;
 }
 
 .hover4 {
     @include middle-settings();
     left: 30.5%;
-    top: 2600px;
+    top: 2665px;
 }
 
 .hover5 {
     @include middle-settings();
     left: 50.5%;
-    top: 2600px;
+    top: 2665px;
 }
 
 .hover6 {
     @include middle-settings();
     left: 71%;
-    top: 2600px;
+    top: 2665px;
 }
 
 .col-md-4:hover .lovely-work-img {
@@ -761,12 +766,12 @@ menu {
     .desc {
         background: #1d2126;
         color: white;
-        transition: .5s ease;
-        display: inline-block; 
+        // transition: .5s ease;
+        display: inline-block;
     }
-    // .lovely-work-image1 {
-    //     margin-bottom: 60px;
-    // }
+    .lovely-work-image1, .lovely-wokr-image2, .lovely-work-image, .lovely-work-img {
+        margin-bottom: 0px;
+    }
 }
 
 .desc {
@@ -784,7 +789,7 @@ menu {
 
 .lovely-work-button {
     display: inline-block;
-    margin-top: 60px;
+    margin-top: 20px;
     margin-bottom: 60px;
     width: 150px;
     left: 50%;
