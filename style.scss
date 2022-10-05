@@ -1,3 +1,8 @@
+// xs - mobile
+// sm - tablet
+// md - laptop
+// lg - desktop
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Quattrocento+Sans:wght@700&display=swap');
 
 * {
@@ -31,11 +36,6 @@ body {
     padding-right: 15px;
 }
 
-.col-xs-12 { /* Extra Small */
-    flex: 0 0 100%; /* колонка не будет сжиматься и разжиматься (значения 0 и 0), а будет заполнять 100% ширины */
-    max-width: 100%;
-}
-
 @mixin before-setting() {
     float: left;
     content: "";
@@ -43,6 +43,108 @@ body {
     width: 10px;
     height: 35px;
     margin-right: 15px;
+}
+
+@mixin col-xs-settings() {
+    .col-xs-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .col-xs-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-xs-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-xs-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col-xs-5 {
+        flex: 0 0 41.66666%;
+        max-width: 41.66666%;
+    }
+    .col-xs-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-xs-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .col-xs-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-xs-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-xs-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .col-xs-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+    .col-xs-12 { /* Extra Small */
+        flex: 0 0 100%; /* колонка не будет сжиматься и разжиматься (значения 0 и 0), а будет заполнять 100% ширины */
+        max-width: 100%;
+    }
+}
+
+@mixin col-sm-settings() {
+    .col-sm-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .col-sm-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-sm-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-sm-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col-sm-5 {
+        flex: 0 0 41.66666%;
+        max-width: 41.66666%;
+    }
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-sm-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .col-sm-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-sm-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-sm-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .col-sm-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+    .col-sm-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 @mixin col-md-settings() {
@@ -96,55 +198,64 @@ body {
     }
 }
 
-@mixin col-xs-settings() {
-    .col-xs-1 {
+@mixin col-lg-settings() {
+    .col-lg-1 {
         flex: 0 0 8.33333%;
         max-width: 8.33333%;
     }
-    .col-xs-2 {
+    .col-lg-2 {
         flex: 0 0 16.66667%;
         max-width: 16.66667%;
     }
-    .col-xs-3 {
+    .col-lg-3 {
         flex: 0 0 25%;
         max-width: 25%;
     }
-    .col-xs-4 {
+    .col-lg-4 {
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
     }
-    .col-xs-5 {
+    .col-lg-5 {
         flex: 0 0 41.66666%;
         max-width: 41.66666%;
     }
-    .col-xs-6 {
+    .col-lg-6 {
         flex: 0 0 50%;
         max-width: 50%;
     }
-    .col-xs-7 {
+    .col-lg-7 {
         flex: 0 0 58.33333%;
         max-width: 58.33333%;
     }
-    .col-xs-8 {
+    .col-lg-8 {
         flex: 0 0 66.66667%;
         max-width: 66.66667%;
     }
-    .col-xs-9 {
+    .col-lg-9 {
         flex: 0 0 75%;
         max-width: 75%;
     }
-    .col-xs-10 {
+    .col-lg-10 {
         flex: 0 0 83.33333%;
         max-width: 83.33333%;
     }
-    .col-xs-11 {
+    .col-lg-11 {
         flex: 0 0 91.66667%;
         max-width: 91.66667%;
     }
-    .col-xs-12 {
+    .col-lg-12 {
         flex: 0 0 100%;
         max-width: 100%;
     }
+}
+
+/* xs (телефон) */
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+    @include col-xs-settings();
 }
 
 /* sm (планшет) */
@@ -153,6 +264,7 @@ body {
     .container {
         max-width: 720px;
     }
+    @include col-sm-settings();
 }
 
 /* md (ноутбук) */
@@ -164,13 +276,13 @@ body {
     @include col-md-settings();
 }
 
-/* lg (desktop) */
+/* lg (компьютер) */
 
 @media (min-width:1200px) {
     .container {
         max-width: 1140px;
     }
-    @include col-md-settings();
+    @include col-lg-settings();
 }
 
 @media (max-width:768px) {
