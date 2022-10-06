@@ -21,10 +21,19 @@ body {
     padding: 0 15px;
     width: 100%;
     margin: 0 auto;
+    // width: 1170px;
 }
 
 .row {
     padding-top: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row1 {
+    padding-top: 10px;
     margin-left: -15px;
     margin-right: -15px;
     display: flex;
@@ -306,7 +315,8 @@ body {
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 755px;
     padding-bottom: 15px;
     font-family: 'Open Sans';
 }
@@ -361,8 +371,6 @@ body {
 }
 
 .menu li:hover {
-    // margin-top: 10px;
-    // padding-top: 10px;
     transition: 0.18s all ease-in-out;
 }
 
@@ -374,7 +382,6 @@ body {
     font-size: 14px;
     padding-left: 8px;
     margin-left: 100px;
-    // margin-top: 8px;
     color: #2c71b8;
 }
 
@@ -432,10 +439,9 @@ body {
     background-repeat: no-repeat; 
     font-size: 36px;
     font-family: 'Quattrocento Sans';
-    // position: absolute;
     width: 100%;
     height: 660px;
-    padding-top: 162px;
+    padding-top: 200px;
     padding-left: 440px;
     background-position: center; 
     background-size: cover;
@@ -617,7 +623,7 @@ main {
 
 .our-team {
     padding-left: 16px;
-    padding-top: 80px;
+    padding-top: 70px;
     height: 650px;
 }
 
@@ -743,13 +749,17 @@ main {
     background-color: #3a454d;
 }
 
+.social-media:hover {
+    background-color: #a2a4a8;
+    transition: .3s ease;
+}
+
 menu {
-    height: 980px;
     background-color: #3a454d;
 }
 
 .work {
-    padding-top: 80px;
+    padding-top: 70px;
 }
 
 .work-title {
@@ -762,6 +772,7 @@ menu {
 .work-title::before {
     @include before-setting();
     background-color: #4e5a62;
+    margin-left: 15px;
 }
 
 .lovely-work-images {
@@ -780,6 +791,9 @@ menu {
     width: 360px;
     height: 265px;
     margin-bottom: 60px;
+    .col-md-4 {
+        padding-left: 0px;
+    }
 }
 
 .lovely-work-image2 {
@@ -878,7 +892,6 @@ menu {
     .desc {
         background: #1d2126;
         color: white;
-        // transition: .5s ease;
         display: inline-block;
     }
     .lovely-work-image1, .lovely-wokr-image2, .lovely-work-image, .lovely-work-img {
@@ -901,7 +914,7 @@ menu {
 
 .lovely-work-button {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 33px;
     margin-bottom: 60px;
     width: 150px;
     left: 50%;
@@ -922,4 +935,97 @@ menu {
     background-color: #23b7a4;
     color: white;
     border: 2px solid #23b7a4;
+}
+
+.services-title {
+    text-transform: uppercase;
+    font-family: 'Quattrocento Sans';
+    font-size: 36px;
+    padding-top: 70px;
+}
+
+.services-title::before {
+    @include before-setting();
+    background-color: #e1e6ea;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.service-item {
+    display: flex;
+}
+
+.services-subtitle {
+    font-family: 'Quattrocento Sans';
+    font-size: 17px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.services-image-1, .services-image-2, .services-image-3, .services-image-4 {
+    padding-top: 90px;
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.services-image-5, .services-image-6, .services-image-7, .services-image-8 {
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.services-text {
+    padding-bottom: 90px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    text-align: center;
+    color: #a2a4a8;
+    line-height: 1.4;
+}
+
+feature {
+    background-color: #3a454d;
+}
+
+.features-title {
+    text-transform: uppercase;
+    font-family: 'Quattrocento Sans';
+    font-size: 36px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    color: white
+}
+
+.features-title::before {
+    @include before-setting();
+    background-color: #4e5a62;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.feature-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 55px;
+}
+
+.feature-title {
+    color: white;
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-family: 'Quattrocento Sans';
+    font-size: 18px;
+}
+
+.feature-description {
+    color: rgba($color: #ffffff, $alpha: 0.8);
+    line-height: 1.5;
+    padding-top: 35px;
+    font-family: 'Open Sans';
+    font-size: 16px;
 }
