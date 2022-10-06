@@ -204,7 +204,7 @@ body {
 /* lg (компьютер) */
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1170px;
   }
   .col-lg-1 {
     flex: 0 0 8.33333%;
@@ -1045,7 +1045,7 @@ feature {
 .feature-title {
   color: white;
   text-transform: uppercase;
-  padding-top: 30px;
+  padding-top: 40px;
   font-family: "Quattrocento Sans";
   font-size: 18px;
 }
@@ -1053,7 +1053,7 @@ feature {
 .feature-description {
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.5;
-  padding-top: 35px;
+  padding-top: 20px;
   font-family: "Open Sans";
   font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
