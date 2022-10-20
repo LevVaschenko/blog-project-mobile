@@ -301,6 +301,68 @@ body {
     .header {
         height: 80px;
     }
+    .nav-mobile-menu {
+        width: 15px;
+        height: 15px;
+        position: relative;
+        top: -10px;
+        span {
+            height: 1px;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            transition: 0.25s ease-in-out;
+
+            &:nth-child(1) {
+                top: 3px;
+            }
+            &:nth-child(2) {
+                top: 7px;
+            }
+            &:nth-child(3) {
+                bottom: 3px;
+            }
+        }
+        &.active-menu {
+            span {
+                &:nth-child(1) {
+                    top: 50%;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    top: 50%;
+                    transform: rotate(-45deg);
+                }
+                &:nth-child(3) {
+                    transform: scale(0);
+                }
+            }
+        }
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 260px;
+        width: 260px;
+        transform: translateX(150%);
+        opacity: 0;
+        visibility: hidden;
+
+        &.active-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+            top: 30px;
+            background-color: #1d2126;
+            height: 50px;
+            ul {
+                flex-direction: column;
+            }
+        }
+    }
 }
 
 .logo {
@@ -393,7 +455,7 @@ body {
     font-weight: 600;
     width: 160px;
     height: 33px;
-    -webkit-appearance: none;
+    // -webkit-appearance: none;
     font-family: 'Roboto', sans-serif;
     color: #a4aead;
     border-radius: 2px;
