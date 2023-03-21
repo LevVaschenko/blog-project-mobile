@@ -450,36 +450,66 @@ body {
   transition: 0.2s all ease-in-out;
 }
 
-.slider-text {
-  color: white;
+.slider {
   background-image: url(images/slider.png);
   background-repeat: no-repeat;
-  font-size: 36px;
-  font-family: "Quattrocento Sans";
-  width: 100%;
-  height: 660px;
-  padding-top: 200px;
-  padding-left: 440px;
   background-position: center;
-  background-size: cover;
+  height: 660px;
 }
 
-lorem {
-  color: rgba(255, 255, 255, 0.5);
-  font-family: "Open Sans";
-  font-size: 16px;
-  top: 10px;
+.slider-info {
+  height: 527px;
+}
+
+.slider-text {
+  position: relative;
+  color: white;
+  font-size: 36px;
+  font-family: "Quattrocento Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 40%;
+}
+
+.welcome, .lorem-text, .buttons-width {
+  width: 615px;
+}
+
+#left-button {
+  margin-left: 0;
 }
 
 .lorem {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Open Sans";
+  font-size: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 650px;
-  height: 45px;
-  padding-top: 16px;
+  line-height: 30px;
+  margin-top: 15px;
+}
+
+.buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: calc(50% + 45px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Quattrocento Sans";
+  color: white;
 }
 
 .button {
   display: inline-block;
-  margin-top: 28px;
+  margin: 0 10px;
   width: 124px;
   font-size: 14px;
   border: 2px solid white;
@@ -745,7 +775,7 @@ h1 {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   top: 50%;
-  left: 86.3337%;
+  left: 86.33%;
 }
 
 .col-md-12:hover .team-members-image {
@@ -793,6 +823,7 @@ menu {
 
 .work {
   padding-top: 70px;
+  margin-left: 1px;
 }
 
 .work-title {
@@ -814,29 +845,23 @@ menu {
 }
 
 .lovely-work-images {
-  display: flex;
-  padding-top: 60px;
-  width: 1140px;
+  margin-top: 60px;
 }
 
-.lovely-work-images2 {
-  display: flex;
-  width: 1140px;
-}
-
-.lovely-work-image, .lovely-work-image1 {
-  padding-right: 25px;
-  width: 360px;
-  height: 265px;
+.lovely-work-section-1 {
   margin-bottom: 60px;
-}
-.lovely-work-image .col-md-4, .lovely-work-image1 .col-md-4 {
-  padding-left: 0px;
+  display: flex;
+  position: relative;
 }
 
-.lovely-work-image2 {
-  width: 360px;
-  height: 265px;
+.lovely-work-section-2 {
+  display: flex;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#lwmargin {
+  margin-left: 39px;
 }
 
 .plus {
@@ -844,156 +869,77 @@ menu {
   height: 20px;
 }
 
-.hover1 {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  top: 50%;
-  left: 30.5%;
-  top: 2340px;
-}
-
-.hover2 {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50.5%;
-  top: 2340px;
-}
-
-.hover3 {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  top: 50%;
-  left: 71%;
-  top: 2340px;
-}
-
-.hover4 {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  top: 50%;
-  left: 30.5%;
-  top: 2665px;
-}
-
-.hover5 {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50.5%;
-  top: 2665px;
-}
-
-.hover6 {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  top: 50%;
-  left: 71%;
-  top: 2665px;
-}
-
-.col-md-4:hover .lovely-work-img {
-  opacity: 0.5;
-}
-
-.col-md-4:hover .lovely-work-image2 {
-  opacity: 0.5;
-}
-
-.col-md-4:hover .lovely-work-image1 {
-  opacity: 0.5;
-}
-
-.col-md-4:hover .lovely-work-image {
-  opacity: 0.5;
-}
-
-.col-md-4:hover .hover1 {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.col-md-4:hover .hover2 {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.col-md-4:hover .hover3 {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.col-md-4:hover .hover4 {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.col-md-4:hover .hover5 {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.col-md-4:hover .hover6 {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.col-md-4:hover .desc {
-  background: #1d2126;
-  color: white;
-  display: inline-block;
-}
-.col-md-4:hover .lovely-work-image1, .col-md-4:hover .lovely-wokr-image2, .col-md-4:hover .lovely-work-image, .col-md-4:hover .lovely-work-img {
-  margin-bottom: 0px;
-}
-
-.desc {
-  display: none;
-  width: 335px;
+.lw-img-desc {
   height: 60px;
-  padding-bottom: 25px;
-  padding-top: 20px;
-  text-align: center;
   text-transform: uppercase;
   font-family: "Quattrocento Sans";
-  font-size: 18px;
-  transition: 0.5s ease;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.image-container .lwimage-1 {
+  display: block;
+  width: 340px;
+  height: auto;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.image-container .plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.image-container:hover .lwimage-1 {
+  opacity: 0.5;
+}
+.image-container:hover .plus {
+  opacity: 1;
+  cursor: pointer;
+}
+.image-container:hover .lw-img-desc {
+  opacity: 1;
+}
+.image-container .lw-img-desc {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+}
+
+.lovely-work-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .lovely-work-button {
-  display: inline-block;
-  margin-top: 33px;
-  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 150px;
-  left: 50%;
   font-size: 14px;
   border: 2px solid white;
   color: white;
   border-radius: 6px;
-  text-align: center;
   padding: 14px;
   transition: 0.15s all ease-in-out;
   font-family: "Quattrocento Sans";
   cursor: pointer;
-  margin-left: 500px;
 }
 
 .lovely-work-button:hover,
@@ -1114,8 +1060,8 @@ contact {
   text-transform: uppercase;
   font-family: "Quattrocento Sans";
   font-size: 36px;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .contacts-title::before {
@@ -1244,18 +1190,23 @@ contact {
 
 .footer {
   width: 100%;
-  height: 95px;
+  height: 100px;
   background-color: #3a454d;
   font-family: "Open Sans";
-  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
   color: white;
 }
 
 .copyright {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-medias {
   cursor: pointer;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

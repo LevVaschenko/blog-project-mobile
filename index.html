@@ -48,14 +48,20 @@
     </header>
     <slider>
         <div class="slider">
-            <div class="slider-text">
-                WELCOME TO OUR MARKETPLACE
+            <div class="slider-info">
+                <div class="slider-text">
+                    <div class="welcome">
+                    WELCOME TO OUR MARKETPLACE
+                    </div>
+                </div>
                 <div class="lorem">
-                    <lorem>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor 
-                    non, ornare sagittis dolor. Nulla vestibulu lacus ...
+                    <lorem class="lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor
+                        non, ornare sagittis dolor. Nulla vestibulu lacus ...
                     </lorem>
-                    <div class="buttons">
-                        <a class="button">VIEW MORE</a>
+                </div>
+                <div class="buttons">
+                    <div class="buttons-width">
+                        <a class="button" id="left-button">VIEW MORE</a>
                         <a class="button">VIDEO TOUR</a>
                     </div>
                 </div>
@@ -210,67 +216,61 @@
                         <div class="work-title">
                             lovely work.
                         </div>
-                        <div class="lovely-work-images">
-                            <div class="col-md-4">
-                                    <img src="images/work-image-1.png" alt="" class="lovely-work-image1">
-                                <div class="hover1">
-                                    <img src="images/plus.png" alt="" class="plus">
+                        <div class="col-md-4">
+                            <div class="lovely-work-images">
+                                <div class="lovely-work-section-1">
+                                    <div class="image-container">
+                                        <img src="images/work-image-1.png" alt="work-image-1" class="lwimage-1">
+                                        <div class="lw-img-desc">
+                                            PARTNERSHIP GUIDELINES
+                                        </div>
+                                        <img src="images/plus.png" alt="plus" class="plus">
+                                    </div>
+                                    <div class="image-container" id="lwmargin">
+                                        <img src="images/work-image-2.png" alt="work-image-1" class="lwimage-1">
+                                        <div class="lw-img-desc">
+                                            PARTNERSHIP GUIDELINES
+                                        </div>
+                                        <img src="images/plus.png" alt="plus" class="plus">
+                                    </div>
+                                    <div class="image-container" id="lwmargin">
+                                        <img src="images/work-image-3.png" alt="work-image-1" class="lwimage-1">
+                                        <div class="lw-img-desc">
+                                            PARTNERSHIP GUIDELINES
+                                        </div>
+                                        <img src="images/plus.png" alt="plus" class="plus">
+                                    </div>
                                 </div>
-                                <div class="desc">
-                                    partnership guidlines
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                    <img src="images/work-image-2.png" alt="" class="lovely-work-image1">
-                                <div class="hover2">
-                                    <img src="images/plus.png" alt="" class="plus">
-                                </div>
-                                <div class="desc">
-                                    partnership guidlines
-                                </div> 
-                            </div>
-                            <div class="col-md-4">
-                                    <img src="images/work-image-3.png" alt="" class="lovely-work-image2">
-                                <div class="hover3">
-                                    <img src="images/plus.png" alt="" class="plus">
-                                </div>
-                                <div class="desc">
-                                    partnership guidlines
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lovely-work-images2">
-                            <div class="col-md-4">
-                                    <img src="images/work-image-4.png" alt="" class="lovely-work-image">
-                                <div class="hover4">
-                                    <img src="images/plus.png" alt="" class="plus">
-                                </div>
-                                <div class="desc">
-                                    partnership guidlines
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                    <img src="images/work-image-5.png" alt="" class="lovely-work-image">
-                                <div class="hover5">
-                                    <img src="images/plus.png" alt="" class="plus">
-                                </div>
-                                <div class="desc">
-                                    partnership guidlines
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                    <img src="images/work-image-6.png" alt="" class="lovely-work-img">
-                                <div class="hover6">
-                                    <img src="images/plus.png" alt="" class="plus">
-                                </div>
-                                <div class="desc">
-                                    partnership guidlines
+                                <div class="lovely-work-section-2">
+                                    <div class="image-container">
+                                        <img src="images/work-image-4.png" alt="work-image-1" class="lwimage-1">
+                                        <div class="lw-img-desc">
+                                            PARTNERSHIP GUIDELINES
+                                        </div>
+                                        <img src="images/plus.png" alt="plus" class="plus">
+                                    </div>
+                                    <div class="image-container" id="lwmargin">
+                                        <img src="images/work-image-5.png" alt="work-image-1" class="lwimage-1">
+                                        <div class="lw-img-desc">
+                                            PARTNERSHIP GUIDELINES
+                                        </div>
+                                        <img src="images/plus.png" alt="plus" class="plus">
+                                    </div>
+                                    <div class="image-container" id="lwmargin">
+                                        <img src="images/work-image-6.png" alt="work-image-1" class="lwimage-1">
+                                        <div class="lw-img-desc">
+                                            PARTNERSHIP GUIDELINES
+                                        </div>
+                                        <img src="images/plus.png" alt="plus" class="plus">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="lovely-work-button">
-                            <a class="">SHOW ME MORE</a>
-                        </div>
+                    </div>
+                </div>
+                <div class="lovely-work-section">
+                    <div class="lovely-work-button">
+                        <a class="">SHOW ME MORE</a>
                     </div>
                 </div>
             </div>
@@ -441,11 +441,14 @@
                 </div>
             </div>
         </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423283.43554757076!2d-118.69191349272444!3d34.020730498373275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z0JvQvtGBLdCQ0L3QtNC20LXQu9C10YEsINCa0LDQu9C40YTQvtGA0L3QuNGP!5e0!3m2!1sru!2sus!4v1665111317094!5m2!1sru!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="1900px" height="345px"></iframe>
-        </div>
         <div class="container">
             <div class="row">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423283.43554757076!2d-118.69191349272444!3d34.020730498373275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z0JvQvtGBLdCQ0L3QtNC20LXQu9C10YEsINCa0LDQu9C40YTQvtGA0L3QuNGP!5e0!3m2!1sru!2sus!4v1665111317094!5m2!1sru!2sus"
+                        style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"
+                        width="1200px" height="345px"></iframe>
+                </div>
                 <div class="contacts">
                     <div class="col-xs-12">
                         <div class="contact-information">
@@ -493,22 +496,18 @@
     </contact>
     <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="copyright">
-                        <div class="col-md-9">
+            <div class="col-xs-12">
+                <div class="copyright">
+                    <div class="col-md-9">
                         © Copyright 2014 by PSD Booster. All Rights Reserved.
-                        </div>
-                        <div class="social-medias">
-                            <div class="col-md-12">
-                                <img src="images/twitter.png" alt="">
-                                <img src="images/facebook.png" alt="">
-                                <img src="images/skype.png" alt="">
-                                <img src="images/be.png" alt="">
-                                <img src="images/linkedin.png" alt="">
-                            </div>
-                        </div>
-                    </div>  
+                    </div>
+                    <div class="social-medias">
+                        <img src="images/twitter.png" alt="">
+                        <img src="images/facebook.png" alt="">
+                        <img src="images/skype.png" alt="">
+                        <img src="images/be.png" alt="">
+                        <img src="images/linkedin.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
