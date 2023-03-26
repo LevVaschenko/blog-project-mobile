@@ -298,7 +298,7 @@ body {
     .hidden-xs {
         display: none;
     }
-    .header {
+    header {
         height: 80px;
     }
     .nav-mobile-menu {
@@ -1219,4 +1219,12 @@ contact {
 .social-medias {
     cursor: pointer;
     width: 100%;
+}
+
+.scroll {
+    overflow: auto;
+}
+
+.no-scroll {
+    overflow: hidden;
 }

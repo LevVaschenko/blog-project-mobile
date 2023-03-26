@@ -10,3 +10,36 @@ mobileMenu.addEventListener("click", function () {
     }
 })
 
+
+
+let dataNav = document.querySelector("body").getAttribute("data-nav")
+
+mobileMenu.addEventListener("click", function () {
+    if (dataNav === "false") {
+        dataNav = "true";
+    } else {
+        dataNav = "false";
+    }
+
+    document.querySelector("body").dataset.nav = dataNav;
+});
+
+let body = document.querySelector("body")
+
+mobileMenu.addEventListener("click", function () {
+    let dataNav = body.dataset.nav;
+
+    if (dataNav === "false") {
+        dataNav = "true";
+    } else {
+        dataNav = "false";
+    }
+
+    if (dataNav === "true") {
+        body.classList.add("no-scroll");
+        body.classList.remove("scroll");
+    } else {
+        body.classList.remove("no-scroll");
+        body.classList.add("scroll");
+    }
+});
