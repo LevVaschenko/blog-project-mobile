@@ -455,7 +455,6 @@ body {
     font-weight: 600;
     width: 160px;
     height: 33px;
-    // -webkit-appearance: none;
     font-family: 'Roboto', sans-serif;
     color: #a4aead;
     border-radius: 2px;
@@ -646,41 +645,29 @@ p1::before {
 
 .our-goals {
     padding-top: 150px;
-    padding-left: 25px;
-    width: 100px;
-}
-
-.numbers {
     display: flex;
-    flex-direction: column;
 }
 
-.n01, .n02, .n03  {
-    display: inline-flex;
-    width: 50px;
-    height: 50px;
-    margin-right: 0px;
-    top: 50%;
-    left: 50%;
+.number-item {
+    width: auto;
+}
+
+.number {
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 50px;
+    height: 50px;
     color: white;
     background-color: #23b7a4;
-    margin-bottom: 60px;
+    position: absolute;
 }
 
-h1 {
+.number-text {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin-bottom: 15px;
-}
-
-.our-goals-text {
-    padding-top: 150px;
-    padding-left: 10px;
-    width: 340px;
-    height: 470px;
+    flex-direction: column;
+    margin-left: 75px;
+    width: 320px;
 }
 
 .our-goals-title {
@@ -691,14 +678,6 @@ h1 {
 }
 
 .our-goals-description {
-    font-family: 'Open Sans';
-    font-size: 16px;
-    color: #8d8f92;
-    padding-bottom: 23px;
-    line-height: 22px;
-}
-
-.our-goals-description2 {
     font-family: 'Open Sans';
     font-size: 16px;
     color: #8d8f92;
@@ -733,9 +712,69 @@ h1 {
     }
 }
 
+.member {
+    position: relative;
+    width: 263px;
+    margin-right: 15px;
+}
+
 .team-members-image {
     width: 263px;
     height: 300px;
+    display: block;
+}
+
+.team-members-image {
+    transition: opacity 0.5s ease;
+}
+
+.member-image-section {
+    width: 263px;
+}
+
+.member-social-icons {
+    position: absolute;
+    top: 40.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media {
+    background-color: #3a454d;
+    margin: 0 2px;
+}
+
+.social-media:hover {
+    background-color: #a2a4a8;
+    cursor: pointer;
+    transition: 0.4s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.member:hover .member-name {
+    color: white;
+    transition: 0.5s ease;
+}
+
+.member:hover .description {
+    background-color: #3a454d;
+    transition: 0.5s ease;
+}
+  
+.member:hover .team-members-image {
+    opacity: 0.5;
+    transition: 0.5s ease;
+}
+
+.member:hover .member-social-icons {
+    opacity: 1;
+    transition: 0.5s ease;
 }
 
 .description {
@@ -746,97 +785,16 @@ h1 {
     padding-top: 20px;
     padding-left: 20px;
     text-transform: uppercase;
-    font-family: 'Quattrocento Sans';
+    font-family: "Quattrocento Sans";
     font-size: 16px;
 }
 
-.member-info {
-    font-family: 'Open Sans';
+.member-position {
+    font-family: "Open Sans";
     font-size: 14px;
     color: #a2a4a8;
-    padding-top: 9px;
+    padding-top: 7px;
     text-transform: none;
-}
-
-.team-members-image{
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.lovely-work-image1, .lovely-work-image2, .lovely-work-image, .lovely-work-img {
-    opacity: 1;
-    display: block;
-    backface-visibility: hidden;
-}
-
-@mixin middle-settings() {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    top: 50%;
-}
-
-.middle1 {
-    @include middle-settings();
-    left: 12%;
-}
-
-.middle2 {
-    @include middle-settings();
-    left: 37%;
-}
-
-.middle3 {
-    @include middle-settings();
-    left: 62%;
-}
-
-.middle4 {
-    @include middle-settings();
-    left: 86.33%;
-}
-
-.col-md-12:hover .team-members-image {
-    opacity: 0.5;
-}
-
-.col-md-12:hover .middle1{
-    opacity: 1;
-    cursor: pointer;
-}
-
-.col-md-12:hover .middle2{
-    opacity: 1;
-    cursor: pointer;
-}
-
-.col-md-12:hover .middle3{
-    opacity: 1;
-    cursor: pointer;
-}
-
-.col-md-12:hover .middle4{
-    opacity: 1;
-    cursor: pointer;
-}
-
-.col-md-12:hover .description{
-    background: #3a454d;
-    color: white;
-    transition: .5s ease;
-}
-
-.social-media {
-    background-color: #3a454d;
-}
-
-.social-media:hover {
-    background-color: #a2a4a8;
-    transition: .3s ease;
 }
 
 menu {

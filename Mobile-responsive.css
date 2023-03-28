@@ -95,7 +95,7 @@
     width: 100%;
   }
   .our-goals-text {
-    width: 100%;
+    width: 66%;
   }
   .work {
     padding-left: 0px;
@@ -136,4 +136,41 @@
   .menu li {
     margin-left: 0;
   }
-}/*# sourceMappingURL=responsive.css.map */
+  .welcome, .lorem-text {
+    text-align: center;
+  }
+  .welcome {
+    font-size: 30px !important;
+  }
+  .buttons-width {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .facebook, .twitter, .g, .basketball, .be {
+    height: 60px;
+    margin-bottom: 0px;
+    padding: 0px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .social-icons {
+    display: flex;
+  }
+  .our-goals {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    width: auto;
+  }
+  .number-text {
+    width: auto;
+  }
+  .map, .map-iframe {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Mobile-responsive.css.map */
