@@ -9,18 +9,24 @@
     display: block;
     position: relative;
     width: 100%;
-    margin-top: 0;
+    margin-top: 30px;
     margin-bottom: 20px;
+    padding: 0;
+  }
+  .form {
+    display: flex;
   }
   .forms {
-    display: flex;
+    grid-column-gap: 15px;
   }
   .first-form, .second-form {
     display: flex;
     width: 100%;
   }
   .third-form {
+    display: flex;
     width: 100%;
+    margin-right: 0;
   }
   .contact-information-text {
     display: block;
@@ -55,7 +61,7 @@
   }
   .services-image-1, .services-image-2, .services-image-3, .services-image-4, .services-image-5, .services-image-6, .services-image-7, .services-image-8 {
     padding-top: 0;
-    margin-top: 20px;
+    margin-top: 25px;
   }
   .lovely-work-section-1, .lovely-work-section-2 {
     margin-bottom: 0;
@@ -63,6 +69,9 @@
   }
   .image-container, .lwimage-1 {
     width: 100% !important;
+  }
+  .work {
+    width: 100%;
   }
   .image-container {
     margin-bottom: 60px;
@@ -80,8 +89,23 @@
     height: auto;
     width: 100%;
   }
-  .our-team-title {
-    font-size: 30px;
+  .our-team-title, .title, .work-title, .features-title, .contacts-title {
+    font-size: 31px;
+  }
+  .our-team-title::before, .work-title::before, .features-title::before, .contacts-title::before {
+    top: -2.5px;
+    position: relative;
+  }
+  .services-title::before {
+    top: -2px;
+    position: relative;
+  }
+  .title::before {
+    top: -3px;
+    position: relative;
+  }
+  .services-title {
+    font-size: 35px;
   }
   .member {
     margin-bottom: 35px;
@@ -148,9 +172,6 @@
     align-items: center;
     margin-bottom: 80px;
   }
-  .title {
-    font-size: 30px;
-  }
   .facebook, .twitter, .g, .basketball, .be {
     height: 60px;
     margin-bottom: 0px;
@@ -172,5 +193,25 @@
   }
   .map, .map-iframe {
     width: 100%;
+  }
+  .team-members .col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .copyright .col-md-9 {
+    padding-left: 0;
+    font-size: 12px;
+  }
+  .footer .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .social-medias {
+    width: auto;
+    display: flex;
+  }
+  .social-medias img {
+    width: 30px;
+    height: 30px;
   }
 }/*# sourceMappingURL=Mobile-responsive.css.map */

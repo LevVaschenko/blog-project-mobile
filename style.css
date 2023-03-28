@@ -541,7 +541,7 @@ main {
   padding-left: 15px;
 }
 
-p1::before {
+.title::before {
   float: left;
   content: "";
   top: 1443px;
@@ -680,13 +680,13 @@ p1::before {
 
 .member {
   position: relative;
-  width: 263px;
+  width: auto;
   margin-right: 15px;
 }
 
 .team-members-image {
-  width: 263px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   display: block;
 }
 
@@ -695,7 +695,7 @@ p1::before {
 }
 
 .member-image-section {
-  width: 263px;
+  width: auto;
 }
 
 .member-social-icons {
@@ -745,7 +745,7 @@ p1::before {
 
 .description {
   display: block;
-  width: 263px;
+  width: auto;
   height: 74px;
   background: #e1e6ea;
   padding-top: 20px;
@@ -1063,6 +1063,15 @@ contact {
   background-color: white;
 }
 
+.forms {
+  height: 90px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
 .your-name, .your-email {
   display: flex;
   font-family: "Quattrocento Sans";
@@ -1073,12 +1082,20 @@ contact {
 }
 
 .first-form, .second-form {
-  width: 240px;
+  width: 235px;
   height: 44px;
   border: none;
   background-color: #eaeef1;
   padding: 10px;
   border-radius: 3px;
+}
+
+.your-name .col-md-6 {
+  padding-left: 15px;
+}
+
+.your-email .col-md-6 {
+  padding-left: 6px;
 }
 
 .first-form {
@@ -1097,7 +1114,7 @@ contact {
 }
 
 .third-form {
-  width: 488px;
+  width: 475px;
   height: 160px;
   border: none;
   background-color: #eaeef1;
@@ -1153,8 +1170,11 @@ contact {
 }
 
 .social-medias {
-  cursor: pointer;
   width: 100%;
+}
+
+.social-medias img {
+  cursor: pointer;
 }
 
 .scroll {
