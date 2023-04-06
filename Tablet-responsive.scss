@@ -1,14 +1,67 @@
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1199px) {
+    @media (min-width: 768px) and (max-width: 991px) {
+        .contact-information-form {
+            display: block;
+            position: relative;
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding: 0;
+        }
+        .contact-information {
+            display: block;
+        }
+        .feature-images {
+            width: 100%;
+            flex-direction: column;
+            padding-bottom: 0;
+        }
+        .lovely-work-div {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .nav-mobile-section {
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .contact-information-form {
+            display: block;
+            position: relative;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 8px;
+            padding-top: 18px;
+        }
+        .contact-information {
+            display: flex;
+        }
+        .feature-images {
+            display: flex;
+        }
+        .menu {
+            width: 100% !important;
+        }
+        .logo-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .nav-mobile-section {
+            padding-top: 5px;
+        }
+        .our-goals {
+            padding-bottom: 110px !important;
+        }
+    }
     header {
         width: 100%;
-    }
-    .contact-information-form {
-        display: block;
-        position: relative;
-        width: 100%;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        padding: 0;
     }
     .form {
         display: flex;
@@ -29,16 +82,8 @@
         display: block;
         position: relative;
     }
-    .contact-information {
-        display: block;
-    }
     .second1 {
         padding-bottom: 10px;
-    }
-    .feature-images {
-        width: 100%;
-        flex-direction: column;
-        padding-bottom: 0;
     }
     .features, .feature-image1, .feature-image1 img, .feature-title, .feature-description, .feature-image2, .feature-image2 img, .feature-image3, .feature-image3 img {
         width: 100%;
@@ -48,9 +93,6 @@
     }
     .feature-description {
         margin-bottom: 35px;
-    }
-    .service-item {
-        flex-direction: column;
     }
     .services-text {
         padding-bottom: 0;
@@ -69,6 +111,7 @@
     }
     .work {
         width: 100%;
+        margin-left: 0px;
     }      
     .image-container {
         margin-bottom: 60px;
@@ -77,10 +120,20 @@
         margin-left: 0px;
     }
     .team-members {
-        flex-direction: column;
-        display: block;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 0px;
         position: relative;
         margin-bottom: 20px;
+    }
+    .lovely-work-section-1, .lovely-work-section-2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 13px;
+        grid-row-gap: 0px;
     }
     .our-team {
         height: auto;
@@ -110,8 +163,14 @@
     .member {
         margin-bottom: 35px;
         margin-right: 0;
+        width: 100%;
     }
-    .about, .our-mission {
+    .about {
+        display: flex;
+        flex-direction: column;
+        width: 58%;
+    }
+    .our-mission {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -121,9 +180,6 @@
     }
     .our-goals-text {
         width: 66%;
-    }
-    .work {
-        padding-left: 0px;
     }
     .menu.active-menu {
         display: flex;
@@ -137,20 +193,9 @@
         max-width: 767px;
     }
     .logo {
-        margin-top: 20px;
+        margin-top: 8px;
         padding-top: 0;
         padding-bottom: 0;
-    }
-    .nav-mobile-section {
-        width: 50%;
-        height: 60px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-left: auto;
-    }
-    .nav-mobile-menu {
-        top: 0px;
     }
     .menu a, .menu li {
         width: auto !important;
@@ -177,16 +222,15 @@
         height: 60px;
         margin-bottom: 0px;
         padding: 0px;
-        margin-right: 5px;
+        margin-right: 8px;
     }
     .social-icons {
         display: flex;
     }
     .our-goals {
         padding-top: 100px;
-        padding-bottom: 50px;
-        padding-left: 15px;
-        width: auto;
+        padding-bottom: 80px;
+        width: 42%;
     }
     .number-text {
         width: auto;
@@ -201,7 +245,7 @@
     .copyright .col-md-9 {
         padding-left: 0;
         padding-right: 2px;
-        font-size: 12px;
+        font-size: 16px;
     }
     .footer .container {
         padding-left: 5px;
@@ -212,10 +256,28 @@
         display: flex;
     }
     .social-medias img {
-        width: 36px;
-        height: 36px;
+        width: 48px;
+        height: 48px;
     }
     .buttons {
         margin-top: 30px;
+    }
+    .logo-section {
+        width: 100%;
+    }
+    .menu {
+        width: 710px;
+        max-width: 1199px;
+        padding-bottom: 0;
+    }
+    .search-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .form-search-header {
+        margin-left: 0;
     }
 }
