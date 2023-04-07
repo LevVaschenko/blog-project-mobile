@@ -10,4 +10,4 @@ This example site was made by **Modest CSS Template.**
 
 This can be used as a landing page or as a portfolio, with different photos, social networks and Google Maps with location where your office is, for example.
 
-This site has a mobile version for different devices. From phone to desktop sizes.
+This site has a mobile responsive version for different devices. From phone to desktop sizes.
