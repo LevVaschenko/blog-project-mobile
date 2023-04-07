@@ -276,9 +276,7 @@ body {
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
-  justify-content: space-around;
-  width: 755px;
-  padding-bottom: 15px;
+  justify-content: space-evenly;
   font-family: "Open Sans";
 }
 
@@ -306,16 +304,8 @@ body {
   justify-content: flex-start;
 }
 
-.menu li {
-  float: left;
-  width: 65px;
-  height: 30px;
-  margin-left: 15px;
-}
-
 .menu a {
   display: flex;
-  width: 80px;
   height: 30px;
   margin-top: 5px;
   text-decoration: none;

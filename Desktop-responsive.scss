@@ -1,3 +1,16 @@
 @media (min-width: 1200px) {
-
+    .form-search-header {
+        margin-left: 0;
+    }
+    .map, .map-iframe {
+        width: 100%;
+    }
+    .features-col {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .search-section {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
